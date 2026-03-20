@@ -1,0 +1,12 @@
+.env
+
+# Airflow runtime
+logs/
+__pycache__/
+*.pyc
+.airflowignore
+
+# Python
+.venv/
+*.egg-info/
+dist/
