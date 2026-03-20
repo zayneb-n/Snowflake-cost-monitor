@@ -10,7 +10,7 @@ from airflow.operators.empty import EmptyOperator
 sys.path.insert(0, "/opt/airflow")
 
 from plugins.snowflake_client import run_query
-from slack.notifier import send_anomaly_alert, send_budget_alert, send_daily_digest
+from notifier.notifier import send_anomaly_alert, send_budget_alert, send_daily_digest
 
 # Constants pulled from environment 
 DAILY_BUDGET   = float(os.environ.get("DAILY_BUDGET_CREDITS", 10))
