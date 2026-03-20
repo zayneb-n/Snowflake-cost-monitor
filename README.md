@@ -4,15 +4,15 @@
 
 Three checks run automatically at 08:00 UTC every day:
 
-**Anomaly detection** — compares each warehouse's spend yesterday against
+**Anomaly detection** : compares each warehouse's spend yesterday against
 its 7-day rolling average. If any warehouse ran 30% or more above its
 normal baseline, a Slack alert fires immediately.
 
-**Budget guard** — adds up everything spent across all warehouses yesterday.
+**Budget guard** : adds up everything spent across all warehouses yesterday.
 If the total exceeds your configured daily credit limit, another Slack
 alert fires.
 
-**Daily digest** — regardless of whether anything went wrong, a morning
+**Daily digest** : regardless of whether anything went wrong, a morning
 summary lands in Slack with a warehouse-by-warehouse cost breakdown,
 credit totals, and estimated USD spend.
 
