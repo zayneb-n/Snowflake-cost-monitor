@@ -16,7 +16,7 @@ alert fires.
 summary lands in Slack with a warehouse-by-warehouse cost breakdown,
 credit totals, and estimated USD spend.
 
-The two checks run in parallel. The digest always fires last.
+The 2 checks run in parallel. The digest always fires last.
 
 ---
 
