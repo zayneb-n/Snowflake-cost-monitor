@@ -30,7 +30,7 @@ The 2 checks run in parallel. The digest always fires last.
 
 All three alert types in action — anomaly detection, budget breach, and the daily digest:
 
-![Slack Alerts](docs/slack_messages.png)
+![Slack Alerts](docs/slack_message.png)
 
 ---
 
