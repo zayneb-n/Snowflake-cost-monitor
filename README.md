@@ -72,5 +72,4 @@ docker compose exec airflow-scheduler \
 python3 -m pytest tests/ -v
 ```
 
-No Snowflake credentials or Slack webhook needed — all HTTP calls
-are mocked. Expected output: 11 passed.
+No Snowflake credentials or Slack webhook needed in tests.Expected output: 11 passed.
