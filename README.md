@@ -24,15 +24,26 @@ The two checks run in parallel. The digest always fires last.
 
 ![Airflow DAG Graph](docs/dag_graph.png)
 
+---
+
+## Slack Alerts
+
+All three alert types in action — anomaly detection, budget breach, and the daily digest:
+
+![Slack Alerts](docs/slack_messages.png)
+
+---
+
 ## Stack
 
-**Orchestration** Apache Airflow 2.9 
-**Data warehouse** Snowflake Enterprise (AWS) 
-**Containerization** Docker + Docker Compose 
-**Alerting** Slack Incoming Webhooks 
-**Language** Python 3.12 
-**Testing**  pytest — 11 unit tests, no credentials needed 
+**Orchestration** Apache Airflow 2.9
+**Data warehouse** Snowflake Enterprise (AWS)
+**Containerization** Docker + Docker Compose
+**Alerting** Slack Incoming Webhooks
+**Language** Python 3.12
+**Testing** pytest — 11 unit tests, no credentials needed
 
+---
 
 ## How to Use It
 
@@ -61,4 +72,5 @@ docker compose exec airflow-scheduler \
 python3 -m pytest tests/ -v
 ```
 
-No Snowflake credentials or Slack webhook needed — all HTTP calls are mocked. Expected output: 11 passed.
+No Snowflake credentials or Slack webhook needed — all HTTP calls
+are mocked. Expected output: 11 passed.
